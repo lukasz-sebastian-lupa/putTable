@@ -42,12 +42,10 @@ $("div.output").putTable(table,<br/>
 &emsp;&emsp;{<br/>
 &emsp;&emsp;&emsp;&emsp;number:function(val){return val.toFixed(3);},<br/>
 &emsp;&emsp;&emsp;&emsp;string:function(val){return '&lt;i&gt;'+val+'&lt;/i&gt;';}<br/>
-&emsp;&emsp;},<br/>
-&emsp;&emsp;{<br/>
+&emsp;&emsp;},{<br/>
 &emsp;&emsp;&emsp;&emsp;string:'"',<br/>
 &emsp;&emsp;&emsp;&emsp;col:{3:'-'}<br/>
-&emsp;&emsp;},<br/>
-&emsp;&emsp;{<br/>
+&emsp;&emsp;},{<br/>
 &emsp;&emsp;&emsp;&emsp;string:'"',<br/>
 &emsp;&emsp;&emsp;&emsp;number:' %'<br/>
 &emsp;&emsp;},false,false<br/>
