@@ -4,14 +4,27 @@ jQuery plugin for creating an html table from an javascript array.<br/>
 Plugin adds a function to jQuery:<br/>
 $('*').putTable(data, convert={}, prefix={}, suffix={}, firstRow=true, firstCol=true)<br/>
 <br/>
-data - an javascript Array<br/>
-convert - json containing functions for converting and manipulating of data array elements<br/>
-prefix - json containg prefixes for specific row, columns and datatypes<br/>
-suffix - json containg suffixes for specific row, columns and datatypes<br/>
-firstRow - should function convert and aply prefixes and suffixes for the first row<br/>
-firstCol - should function convert and aply prefixes and suffixes for the first column<br/>
+'data' - an javascript Array<br/>
+'convert' - json containing functions for converting and manipulating of 'data' array elements<br/>
+'prefix' - json containg prefixes for specific row, columns and data types<br/>
+'suffix' - json containg suffixes for specific row, columns and data types<br/>
+'firstRow' - should function convert and aply prefixes and suffixes for the first row<br/>
+'firstCol' - should function convert and aply prefixes and suffixes for the first column<br/>
 <br/>
 Elements <tr> and <td> are marked using ".firstRow" and ".firstCol" classes.<br/>
+'Convert' can contain elements named like javascript data types:<br/>
+{<br/>
+&emsp;&emsp;string:function(val){return val},<br/>
+&emsp;&emsp;number:function(val){return val},<br/>
+&emsp;&emsp;boolean:function(val){return val},<br/>
+&emsp;&emsp;array:function(val){return val},<br/>
+&emsp;&emsp;object:function(val){return val},<br/>
+}<br/>
+'Prefix'/'suffix' can contain elements named like javascript data types and 'row'/'col' elements:<br/>
+{<br/>
+&emsp;&emsp;string:'', number:'', boolean:'', array:'', object:'',<br/>
+&emsp;&emsp;row:{0:'',1:'',2:'',...}, col:{0:'',1:'',2:'',...}<br/>
+}<br/>
 <br/>
 Example usage:<br/>
 <br/>
