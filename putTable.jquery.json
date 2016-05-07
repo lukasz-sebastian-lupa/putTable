@@ -1,0 +1,30 @@
+{
+	"name": "putTable",
+	"title": "jQuery putTable",
+	"description": "jQuery plugin for creating an html table from an javascript array.",
+	"keywords": [
+		"query",
+		"table",
+		"array"
+	],
+	"version": "1.0.0",
+	"author": {
+		"name": "Lukas Lupa",
+		"url": "https://github.com/lukasz-sebastian-lupa/putTable/blob/master/AUTHORS"
+	},
+	"maintainers": [{
+		"name": "Lukas Lupa",
+		"email": "lukasz.sebastian.lupa@gmail.com"
+	}],
+	"licenses": [{
+		"type": "GPL-3.0",
+		"url": "https://github.com/lukasz-sebastian-lupa/putTable/blob/master/LICENSE"
+	}],
+	"bugs": "https://github.com/lukasz-sebastian-lupa/putTable/issues",
+	"homepage": "https://github.com/lukasz-sebastian-lupa/putTable",
+	"docs": "https://github.com/lukasz-sebastian-lupa/putTable",
+	"download": "https://github.com/lukasz-sebastian-lupa/putTable",
+	"dependencies": {
+		"jquery": ">=2.2.2"
+	}
+}
