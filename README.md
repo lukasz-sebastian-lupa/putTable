@@ -45,14 +45,12 @@ $("div.output").putTable(table,<br/>
 &emsp;&emsp;},<br/>
 &emsp;&emsp;{<br/>
 &emsp;&emsp;&emsp;&emsp;string:'"',<br/>
-&emsp;&emsp;&emsp;&emsp;col:{<br/>
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;3:'-'<br/>
-&emsp;&emsp;&emsp;&emsp;}<br/>
+&emsp;&emsp;&emsp;&emsp;col:{3:'-'}<br/>
 &emsp;&emsp;},<br/>
 &emsp;&emsp;{<br/>
 &emsp;&emsp;&emsp;&emsp;string:'"',<br/>
 &emsp;&emsp;&emsp;&emsp;number:' %'<br/>
-&emsp;&emsp;&emsp;&emsp;},false,false<br/>
+&emsp;&emsp;},false,false<br/>
 ).css({<br/>
 &emsp;&emsp;width:"80%",<br/>
 &emsp;&emsp;fontSize:"12px"<br/>
