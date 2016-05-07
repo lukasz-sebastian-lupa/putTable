@@ -48,13 +48,18 @@ $("div.output").putTable(table,<br/>
 &emsp;&emsp;},{<br/>
 &emsp;&emsp;&emsp;&emsp;string:'"',<br/>
 &emsp;&emsp;&emsp;&emsp;number:' %'<br/>
-&emsp;&emsp;},false,false).css({<br/>
-&emsp;&emsp;width:"80%",<br/>
-&emsp;&emsp;fontSize:"12px"<br/>
-}).find("td").css({<br/>
-&emsp;&emsp;border:"dotted 1px",<br/>
-&emsp;&emsp;padding:"2px"<br/>
-});<br/>
+&emsp;&emsp;},false,false<br/>
+).css(<br/>
+&emsp;&emsp;{<br/>
+&emsp;&emsp;&emsp;&emsp;width:"80%",<br/>
+&emsp;&emsp;&emsp;&emsp;fontSize:"12px"<br/>
+&emsp;&emsp;}<br/>
+).find("td").css(<br/>
+&emsp;&emsp;{<br/>
+&emsp;&emsp;&emsp;&emsp;border:"dotted 1px",<br/>
+&emsp;&emsp;&emsp;&emsp;padding:"2px"<br/>
+&emsp;&emsp;}<br/>
+);<br/>
 <br/>
 $('.firstCol').css({<br/>
 &emsp;&emsp;fontWeight:'bold',<br/>
