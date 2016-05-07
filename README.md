@@ -11,7 +11,7 @@ $('*').putTable(data, convert={}, prefix={}, suffix={}, firstRow=true, firstCol=
 'firstRow' - should function convert and aply prefixes and suffixes for the first row<br/>
 'firstCol' - should function convert and aply prefixes and suffixes for the first column<br/>
 <br/>
-Elements <tr> and <td> are marked using ".firstRow" and ".firstCol" classes.<br/>
+Elements &lt;tr&gt; and &lt;td&gt; are marked using ".firstRow" and ".firstCol" classes.<br/>
 'Convert' can contain elements named like javascript data types:<br/>
 {<br/>
 &emsp;&emsp;string:function(val){return val},<br/>
