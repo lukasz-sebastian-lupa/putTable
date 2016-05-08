@@ -28,9 +28,15 @@
                             (prefix[typeof data[i][j]].toString()):
                             ('')
                         )+
-                        ((typeof convert[typeof data[i][j]] === 'function')?
-                            (convert[typeof data[i][j]](data[i][j]).toString()):
-                            (data[i][j].toString())
+                        (((typeof convert.row !== 'undefined')?(typeof convert.row[j] === 'function'):(false))?
+                            (convert.row[j](data[i][j]).toString()):
+                            (((typeof convert.col !== 'undefined')?(typeof convert.col[j] === 'function'):(false))?
+                                (convert.col[j](data[i][j]).toString()):
+                                ((typeof convert[typeof data[i][j]] === 'function')?
+                                    (convert[typeof data[i][j]](data[i][j]).toString()):
+                                    (data[i][j].toString())
+                                )
+                            )
                         )+
                         ((typeof suffix[typeof data[i][j]] !== 'undefined')?
                             (suffix[typeof data[i][j]].toString()):
